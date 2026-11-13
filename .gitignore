@@ -1,0 +1,7 @@
+# private: Google Drive folder ids (see config.local.example.json)
+config.local.json
+# local noise
+.DS_Store
+__pycache__/
+*.pyc
+.b64/

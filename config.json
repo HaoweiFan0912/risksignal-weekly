@@ -1,0 +1,43 @@
+{
+  "_说明": "周报流水线的全部可配置项。路径若为相对路径，相对于本文件所在文件夹解析。私密项（Drive 文件夹 ID）放 config.local.json（不提交，格式见 config.local.example.json），会覆盖这里的同名项。",
+
+  "drive": {
+    "account_note": "Google Drive 账号为项目所有者的个人账号；AI 通过 Google Drive 连接器访问。",
+    "risksignal_root_folder_id": "",
+    "weekly_parent_folder_id": "",
+    "weekly_parent_folder_path": "RiskSignal/热点收集",
+    "week_folder_name_format": "{mon_m}.{mon_d}.{mon_y}-{sun_m}.{sun_d}.{sun_y}",
+    "week_folder_example": "11.16.2026-11.22.2026",
+    "weekly_doc_title": "周报",
+    "upload_title_format": "周报_公众号排版_{week_folder}.html",
+    "upload_note": "build 后把 _预览.html 上传到当周文件夹；同名旧版在新版上传成功后移入回收站（可恢复）"
+  },
+
+  "output_root": "../周报排版",
+  "output_name": "周报_排版_异常点(risksignal-outlier)",
+
+  "chrome_candidates": [
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "/Applications/Chromium.app/Contents/MacOS/Chromium",
+    "google-chrome",
+    "google-chrome-stable",
+    "chromium",
+    "chromium-browser",
+    "C:/Program Files/Google/Chrome/Application/chrome.exe"
+  ],
+
+  "section_en": {
+    "保险创新": "INNOVATION",
+    "风险案例": "RISK CASES",
+    "融资": "FUNDING",
+    "并购与合作": "M&A · PARTNERSHIP",
+    "并购": "M&A",
+    "合作": "PARTNERSHIP",
+    "监管政策": "REGULATION",
+    "政策": "REGULATION",
+    "相关新闻": "MARKET NEWS"
+  },
+  "section_name_fix": {
+    "风险案列": "风险案例"
+  }
+}
